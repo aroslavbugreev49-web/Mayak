@@ -1,0 +1,43 @@
+version = 2
+
+[module]
+type = "android-app"
+name = "app"
+languageLevel = "JAVA_8"
+output = "build/classes"
+
+[sourceSets.debug]
+scope = "IMPLEMENTATION"
+assets = ["src/debug/assets"]
+java = ["src/debug/java", "src/debug/kotlin"]
+res = ["src/debug/res"]
+
+[sourceSets.main]
+scope = "IMPLEMENTATION"
+assets = ["src/main/assets"]
+java = ["src/main/java", "src/main/kotlin"]
+res = ["src/main/res"]
+
+[sourceSets.release]
+scope = "IMPLEMENTATION"
+assets = ["src/release/assets"]
+java = ["src/release/java", "src/release/kotlin"]
+res = ["src/release/res"]
+
+[dependencies]
+implementation = [{ platform = "org.apache.poi:poi-ooxml:5.2.5" }, { platform = "org.apache.poi:poi:5.2.5" }, { platform = "org.apache.xmlbeans:xmlbeans:5.1.1" }, { platform = "commons-io:commons-io:2.11.0" }, { platform = "androidx.palette:palette:1.0.0" }, "androidx.databinding:viewbinding:8.7.3", "org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.0", "org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1", { platform = "androidx.core:core:1.13.1" }, "com.google.android.gms:play-services-auth:21.2.0", "okhttp-4.12.0.jar", "com.google.android.material:material:1.14.0", "com.google.android.material:material:1.10.0", { platform = "com.google.android.material:material:1.10.0" }, { platform = "com.google.firebase:firebase-bom:33.7.0" }]
+
+[android]
+namespace = "com.mayak.wordfinder"
+compileSdk = 34
+minSdk = 24
+targetSdk = 34
+manifest = "src/main/AndroidManifest.xml"
+versionCode = 1
+versionName = "1.0"
+isApplication = true
+buildTypes = [{ name = "debug", debuggable = true, minifyEnabled = false, shrinkResources = false }, { name = "release", debuggable = false, minifyEnabled = false, shrinkResources = false, proguardFiles = ["proguard-android-optimize.txt", "proguard-rules.pro"] }]
+viewBinding = true
+compose = true
+parcelize = true
+serialization = true

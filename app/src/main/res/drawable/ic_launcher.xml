@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- БЕЛАЯ ОБВОДКА (круг) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2z"/>
+    
+    <!-- ЧЁРНЫЙ ЦИФЕРБЛАТ -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,2.5C6.76,2.5 2.5,6.76 2.5,12s4.26,9.5 9.5,9.5 9.5,-4.26 9.5,-9.5S17.24,2.5 12,2.5z"/>
+    
+    <!-- БЕЛАЯ СТРЕЛКА -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12.5,7H11v6l5.25,3.15 0.75,-1.23 -4.5,-2.67z"/>
+
+</vector>

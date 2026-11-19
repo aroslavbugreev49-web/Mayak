@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/list_item_background"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/songNumber"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/number_background"
+        android:layout_marginRight="12dp" />
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название песни"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</LinearLayout>

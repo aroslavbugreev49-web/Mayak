@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== ОСНОВНЫЕ ЦВЕТА (серый стеклянный стиль) ===== -->
+    <color name="glass_primary">#33FFFFFF</color>
+    <color name="glass_stroke">#44FFFFFF</color>
+    <color name="glass_light">#22FFFFFF</color>
+    <color name="glass_dark">#1A1A2E</color>
+    <color name="accent">#90A4AE</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="text_hint">#66FFFFFF</color>
+    
+    <!-- ===== ЦВЕТА ДЛЯ ТЕМЫ ===== -->
+    <color name="background">#121212</color>
+    <color name="primary">#33FFFFFF</color>
+    <color name="primary_dark">#1A1A2E</color>
+    
+    <!-- ===== ЦВЕТА ДЛЯ ЭЛЕМЕНТОВ (серые) ===== -->
+    <color name="tab_selected">#44FFFFFF</color>
+    <color name="tab_unselected">#00FFFFFF</color>
+    <color name="highlight">#33FFFFFF</color>
+    <color name="number_bg">#44FFFFFF</color>
+    <color name="favorite_color">#FFFFFF</color>
+</resources>

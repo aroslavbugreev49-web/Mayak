@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mayak.wordfinder">
+
+    <!-- РАЗРЕШЕНИЯ -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Маяк"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- ===== ГЛАВНАЯ АКТИВНОСТЬ (холст с микрофоном) ===== -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ===== ПРОСМОТР ПЕСЕН ===== -->
+        <activity
+            android:name=".FileViewerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FileViewer" />
+
+        <!-- ===== О ПРИЛОЖЕНИИ ===== -->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FileViewer" />
+
+    </application>
+
+</manifest>

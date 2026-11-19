@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/E1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- ШАПКА -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/glass_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/fileTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Название песни"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/btnMinus"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_minus"
+            android:tint="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/btnPlus"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_plus"
+            android:tint="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="3dp" />
+
+    </LinearLayout>
+
+    <!-- БЛОК С ТЕКСТОМ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/glass_background"
+        android:padding="6dp"
+        android:clipToOutline="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/contentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
